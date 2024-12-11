@@ -14,7 +14,7 @@ public class WebConfig implements WebMvcConfigurer
     public void addCorsMappings(CorsRegistry registry) 
     {
     	registry.addMapping("/hms/**") // Allow CORS 
-                .allowedOrigins("http://localhost:8080","https://lms-fronted-rho.vercel.app/")
+                .allowedOrigins("http://localhost:3000","https://lms-fronted-rho.vercel.app/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*") // accept all 
                 .allowCredentials(true);// cookies 
